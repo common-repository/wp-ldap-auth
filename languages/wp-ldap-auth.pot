@@ -1,0 +1,251 @@
+# Translation of the WordPress plugin LDAP authentication 1.0 by Cajus Pollmeier.
+# Copyright (C) 2010 Cajus Pollmeier
+# This file is distributed under the same license as the LDAP authentication package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LDAP authentication 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-ldap-auth\n"
+"POT-Creation-Date: 2010-01-02 17:00+0100\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: wp-ldap-auth.php:41 wp-ldap-auth.php:76
+msgid "LDAP Configuration"
+msgstr ""
+
+#: wp-ldap-auth.php:48
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: wp-ldap-auth.php:73
+msgid "Options saved."
+msgstr ""
+
+#: wp-ldap-auth.php:79
+#, php-format
+msgid ""
+"For centralized management of users and their authentication, a <a href=\"%1"
+"$s\">LDAP Server</a> can greatly reduce the overhead with account creation "
+"and role assignment. If you don't have a LDAP server yet, you can find "
+"information about it at <a href=\"%2$s\">WordPress.com</a>."
+msgstr ""
+
+#: wp-ldap-auth.php:80
+msgid "LDAP Connection"
+msgstr ""
+
+#: wp-ldap-auth.php:82
+msgid "Server URIs"
+msgstr ""
+
+#: wp-ldap-auth.php:83
+msgid ""
+"This option takes a comma separated list of LDAP URIs that describe the "
+"hostname/IP and port of your LDAP server(s)."
+msgstr ""
+
+#: wp-ldap-auth.php:88
+msgid "Use LDAP v3"
+msgstr ""
+
+#: wp-ldap-auth.php:90
+msgid "Base DN"
+msgstr ""
+
+#: wp-ldap-auth.php:91
+msgid "The DN which is used as the base for account and group queries."
+msgstr ""
+
+#: wp-ldap-auth.php:97
+msgid "Search for matching entries in subtrees"
+msgstr ""
+
+#: wp-ldap-auth.php:98
+msgid "Bind DN"
+msgstr ""
+
+#: wp-ldap-auth.php:99
+msgid ""
+"Depending on your LDAP setup, it might be required to do authenticated "
+"searches. In this case you need to specifiy the DN and the password which is "
+"used to bind to the LDAP server. If anonymous binds are sufficient, leave "
+"these fields empty."
+msgstr ""
+
+#: wp-ldap-auth.php:105
+msgid "Bind Password"
+msgstr ""
+
+#: wp-ldap-auth.php:107 wp-ldap-auth.php:135 wp-ldap-auth.php:148
+msgid "Update options &raquo;"
+msgstr ""
+
+#: wp-ldap-auth.php:109
+msgid "Filters &amp; mapping"
+msgstr ""
+
+#: wp-ldap-auth.php:110
+msgid "Account Filter"
+msgstr ""
+
+#: wp-ldap-auth.php:111
+#, php-format
+msgid ""
+"The LDAP plugin will use this filter to locate the user in the LDAP tree. "
+"You can use the keyword %user for the currently used login name. The "
+"resulting DN will be used for the proper password verification."
+msgstr ""
+
+#: wp-ldap-auth.php:117
+msgid "Role Filter"
+msgstr ""
+
+#: wp-ldap-auth.php:118
+#, php-format
+msgid ""
+"If you want to assign WordPress roles depending on LDAP attributes and user "
+"memberships, you can use the <b>Role Filter</b> in combination with <b>Role "
+"Filter Attribute</b> to define the target role automatically. Use the "
+"keyword %user or %userdn in order to search for the role. The contents of "
+"the <b>Role Filter Attribute</b> will be used for the role. The <b>Default "
+"Role</b> will be used if the resulting value is inavlid or not exisistant."
+" Leave it empty to force users to have a LDAP assigned role."
+msgstr ""
+
+#: wp-ldap-auth.php:124
+msgid "Role Filter Attribute"
+msgstr ""
+
+#: wp-ldap-auth.php:130
+msgid "Default Role"
+msgstr ""
+
+#: wp-ldap-auth.php:137
+msgid "Account Autocreation"
+msgstr ""
+
+#: wp-ldap-auth.php:138
+msgid ""
+"If you enable account autocreation, you must specify the users LDAP <b>Mail "
+"Attribute</b> to get the mail address from."
+msgstr ""
+
+#: wp-ldap-auth.php:139
+msgid "Automatically create non existing users"
+msgstr ""
+
+#: wp-ldap-auth.php:140
+msgid "Only allow login for local admins and users that exist in LDAP"
+msgstr ""
+
+#: wp-ldap-auth.php:142
+msgid "Mail Attribute"
+msgstr ""
+
+#: wp-ldap-auth.php:161
+msgid "LDAP authentication is almost ready."
+msgstr ""
+
+#: wp-ldap-auth.php:161
+#, php-format
+msgid ""
+"You must <a href=\"%1$s\">configure your LDAP server</a> for it to work."
+msgstr ""
+
+#: wp-ldap-auth.php:175
+#, php-format
+msgid "Invalid URI: '%s'"
+msgstr ""
+
+#: wp-ldap-auth.php:185
+msgid "Invalid DN format."
+msgstr ""
+
+#: wp-ldap-auth.php:203
+#, php-format
+msgid "%user is needed to define a proper search filter."
+msgstr ""
+
+#: wp-ldap-auth.php:216
+#, php-format
+msgid "%user or %userdn is needed to define a proper search filter."
+msgstr ""
+
+#: wp-ldap-auth.php:230
+msgid "Role Filter Attrbute needed if filter is specified."
+msgstr ""
+
+#: wp-ldap-auth.php:234 wp-ldap-auth.php:256
+msgid "Invalid attribute name."
+msgstr ""
+
+#: wp-ldap-auth.php:244
+msgid ""
+"Invalid role name. Administrator, Editor, Author, Contributor or Subscriber "
+"expected."
+msgstr ""
+
+#: wp-ldap-auth.php:268
+msgid "Invalid maildomain."
+msgstr ""
+
+#: wp-ldap-auth.php:301
+msgid "<strong>ERROR</strong>: The username field is empty."
+msgstr ""
+
+#: wp-ldap-auth.php:304
+msgid "<strong>ERROR</strong>: The password field is empty."
+msgstr ""
+
+#: wp-ldap-auth.php:314 wp-ldap-auth.php:376
+msgid "<strong>ERROR</strong>: Cannot connect to LDAP server."
+msgstr ""
+
+#: wp-ldap-auth.php:319 wp-ldap-auth.php:363 wp-ldap-auth.php:381
+#: wp-ldap-auth.php:407
+msgid "<strong>ERROR</strong>: Invalid username."
+msgstr ""
+
+#: wp-ldap-auth.php:324 wp-ldap-auth.php:386
+msgid "<strong>ERROR</strong>: Incorrect password."
+msgstr ""
+
+#: wp-ldap-auth.php:334 wp-ldap-auth.php:394
+msgid "<strong>ERROR</strong>: No LDAP resovable role."
+msgstr ""
+
+#: wp-ldap-auth.php:341
+msgid "<strong>ERROR</strong>: Autocreation failed. No $attr attribute."
+msgstr ""
+
+: wp-ldap-auth.php:373
+msgid "Default Role needs to be specified if no Role Filter has been set."
+msgstr ""
+
+#. Plugin Name of an extension
+msgid "LDAP authentication"
+msgstr ""
+
+#. #-#-#-#-#  wp-ldap-auth.pot (LDAP authentication 1.0)  #-#-#-#-#
+#. Plugin URI of an extension
+#. #-#-#-#-#  wp-ldap-auth.pot (LDAP authentication 1.0)  #-#-#-#-#
+#. Author URI of an extension
+msgid "http://www.naasa.net"
+msgstr ""
+
+#. Description of an extension
+msgid ""
+"This plugin provides a variable way to use LDAP services for authentication "
+"and role synchronization."
+msgstr ""
+
+#. Author of an extension
+msgid "Cajus Pollmeier"
+msgstr ""
